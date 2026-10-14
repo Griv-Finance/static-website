@@ -1,0 +1,54 @@
+{
+  "_readme": "Single source for links and data that still need real values. Edit, then run: node tools/build.mjs",
+
+  "signup": "/contact/?topic=start",
+  "login": "#",
+
+  "docs": {
+    "documentation": "#",
+    "apiReference": "#",
+    "sdks": "#",
+    "guides": "#"
+  },
+
+  "contact": {
+    "_note": "Set endpoint to a URL that accepts a JSON POST (e.g. a form service). While empty, the form validates but never claims to have sent anything.",
+    "endpoint": ""
+  },
+
+  "careers": {
+    "_note": "Add roles as {\"title\": \"\", \"team\": \"\", \"location\": \"\", \"url\": \"\"}. Empty shows an honest 'no open roles' state.",
+    "roles": []
+  },
+
+  "security": {
+    "_note": "Only list certifications Griv actually holds, e.g. {\"name\": \"\", \"detail\": \"\"}.",
+    "certifications": []
+  },
+
+  "pricing": {
+    "_note": "Leave price empty until confirmed; the page shows 'Published at launch'. detail is optional (e.g. 'per successful transaction').",
+    "groups": [
+      { "name": "Getting paid", "items": [
+        { "product": "Payment Links", "what": "Share a link, get paid", "href": "/products/payment-links/", "price": "", "detail": "" },
+        { "product": "Invoices", "what": "Professional invoices, paid online", "href": "/products/invoices/", "price": "", "detail": "" },
+        { "product": "Virtual Accounts", "what": "Account numbers for collections", "href": "/products/virtual-accounts/", "price": "", "detail": "" },
+        { "product": "Subscriptions", "what": "Recurring and scheduled payments", "href": "/products/subscriptions/", "price": "", "detail": "" }
+      ]},
+      { "name": "Paying out", "items": [
+        { "product": "Payouts", "what": "Single, bulk and scheduled", "href": "/products/payouts/", "price": "", "detail": "" },
+        { "product": "Cards", "what": "Business cards for your team", "href": "/products/cards/", "price": "", "detail": "" }
+      ]},
+      { "name": "Selling", "items": [
+        { "product": "Online Store", "what": "Your products, online", "href": "/products/online-store/", "price": "", "detail": "" },
+        { "product": "Point of Sale", "what": "Sell in-store, stay in sync", "href": "/products/pos/", "price": "", "detail": "" }
+      ]},
+      { "name": "Running the business", "items": [
+        { "product": "Inventory", "what": "Stock that keeps itself current", "href": "/products/inventory/", "price": "", "detail": "" },
+        { "product": "Reconciliation", "what": "Every payment matched", "href": "/products/reconciliation/", "price": "", "detail": "" },
+        { "product": "Analytics & Reporting", "what": "See how you’re performing", "href": "/products/analytics/", "price": "", "detail": "" },
+        { "product": "Griv AI", "what": "Ask questions, get answers", "href": "/products/ai/", "price": "", "detail": "" }
+      ]}
+    ]
+  }
+}
