@@ -1,0 +1,88 @@
+<!--page {"title": "Reconciliation — Griv", "description": "Griv matches every payment to its order and settlement record, and flags anything that doesn't line up — so you always know where each payment stands.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph">
+  <div class="wrap ph-in">
+    <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-match"/></svg></span>Reconciliation</p>
+    <h1 class="h1">Know where every payment stands.</h1>
+    <p class="lede">Griv matches each payment to its order and its settlement record — and shows you the few that don’t line up, so you’re not checking hundreds that do.</p>
+    <div class="btn-row">
+      <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="#try" class="btn btn-lg btn-line">Watch it match</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="try">
+  <div class="wrap">
+    <div class="stage rc-demo reveal" data-demo="recon">
+      <div class="rc-top">
+        <div class="rc-sum" aria-live="polite">
+          <span class="rcs m"><b class="rc-m">0</b> Matched</span>
+          <span class="rcs u"><b class="rc-u">0</b> Unmatched</span>
+          <span class="rcs x"><b class="rc-x">0</b> Exceptions</span>
+        </div>
+        <button type="button" class="btn rc-run"><svg class="ic"><use href="#i-sync"/></svg><span>Match records</span></button>
+      </div>
+      <div class="ui rc-grid tbl-wrap">
+        <table class="tbl rc-tbl">
+          <caption class="sr-only">Payments, orders and settlement records for Ade Fashion, with match status</caption>
+          <thead><tr><th scope="col">Payment</th><th aria-hidden="true"></th><th scope="col">Order</th><th aria-hidden="true"></th><th scope="col">Settlement</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr data-r="m"><td><b>₦85,000</b><small>Tolu A. · Link</small></td><td class="rc-j"></td><td><b>#1042</b><small>Black Dress</small></td><td class="rc-j"></td><td><b>₦85,000</b><small class="mono">GRV-PL-1042</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+            <tr data-r="m"><td><b>₦450,000</b><small>Chidi Prints · Invoice</small></td><td class="rc-j"></td><td><b>#2041</b><small>Invoice</small></td><td class="rc-j"></td><td><b>₦450,000</b><small class="mono">GRV-INV-2041</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+            <tr data-r="m"><td><b>₦85,000</b><small>Walk-in · POS</small></td><td class="rc-j"></td><td><b>#1043</b><small>Black Dress</small></td><td class="rc-j"></td><td><b>₦85,000</b><small class="mono">GRV-POS-1043</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+            <tr data-r="x"><td><b>₦65,000</b><small>Ifeanyi N. · Transfer</small></td><td class="rc-j"></td><td><b>#1046</b><small>Adire Kaftan</small></td><td class="rc-j"></td><td><b>₦60,000</b><small class="mono">GRV-VA-88217</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+            <tr data-r="m"><td><b>₦185,000</b><small>Chidi Prints · Transfer</small></td><td class="rc-j"></td><td><b>#2038</b><small>Invoice</small></td><td class="rc-j"></td><td><b>₦185,000</b><small class="mono">GRV-VA-88214</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+            <tr data-r="u"><td><b>₦10,000</b><small>Bisi A. · Transfer</small></td><td class="rc-j"></td><td class="rc-none">No order found</td><td class="rc-j"></td><td><b>₦10,000</b><small class="mono">GRV-VA-88219</small></td><td class="rc-st"><span class="tag mute">Waiting</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="rc-note" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Three outcomes</p><h2 class="h2 h2-sm">Most payments match. Griv shows you the rest.</h2></header>
+    <div class="cases">
+      <article class="case reveal rc-case m"><span class="tag ok">Matched</span><h3>Everything lines up</h3><p>The payment, its order and its settlement record agree. Nothing for you to do.</p><p class="eg">Tolu A. · ₦85,000 · Order #1042</p></article>
+      <article class="case reveal rc-case u"><span class="tag warn">Unmatched</span><h3>Something is missing</h3><p>Money arrived but there’s no order or invoice for it yet — often a customer paying before the order is created.</p><p class="eg">Bisi A. · ₦10,000 · no order</p></article>
+      <article class="case reveal rc-case x"><span class="tag err">Exception</span><h3>Something doesn’t agree</h3><p>The records exist but the amounts differ. Griv flags it so you can check before it becomes a problem.</p><p class="eg">Order #1046 · ₦65,000 vs ₦60,000</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="row2">
+      <div class="row-copy reveal">
+        <p class="kicker">Why it matters</p>
+        <h3 class="h3">Stop spending hours figuring out where your money went.</h3>
+        <p class="muted">Matching bank alerts to orders by hand takes hours — and the mistakes are the expensive part. With every Griv payment already tied to its order, the end of the month is a check, not a project.</p>
+        <ul class="ticks"><li>Payments matched to orders and invoices</li><li>Settlement records matched to payments</li><li>Exceptions surfaced, not buried</li></ul>
+      </div>
+      <div class="row-art reveal">
+        <div class="ui rc-month">
+          <div class="lp-h"><b>October</b><span class="muted" style="font-size:13px">Ade Fashion</span></div>
+          <div class="rcm-bar" role="img" aria-label="211 matched, 2 unmatched, 1 exception out of 214 transactions"><i class="m" style="--w:98.6%"></i><i class="u" style="--w:.9%"></i><i class="x" style="--w:.5%"></i></div>
+          <div class="rcm-k"><span><i class="m"></i>211 matched</span><span><i class="u"></i>2 unmatched</span><span><i class="x"></i>1 exception</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Connected</p><h2 class="h2">It matches because it’s connected</h2><p class="sub">Reconciliation works because payments, orders and settlements already live in the same place.</p></header>
+    <div class="links-grid reveal">
+      <a href="/products/payment-links/"><span class="mi"><svg><use href="#i-link"/></svg></span><span><b>Payment Links</b><small>Payments that arrive with their order</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/invoices/"><span class="mi"><svg><use href="#i-invoice"/></svg></span><span><b>Invoices</b><small>Each payment tied to its invoice</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/virtual-accounts/"><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Virtual Accounts</b><small>Transfers with references</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Reporting</b><small>Reports built on matched records</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Close the month in minutes." sub="Every payment matched. Every exception explained." button="Start for Free" href="{{signup}}"-->

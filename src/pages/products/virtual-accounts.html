@@ -1,0 +1,137 @@
+<!--page {"title": "Virtual Accounts — Griv", "description": "Give customers an account number to pay into. Every transfer is identified, recorded and added to your Griv balance.", "nav": "dark", "scripts": ["/js/demos.js"]} -->
+
+<section class="hero hero-page">
+  <div class="hero-panel">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-in">
+      <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-bank"/></svg></span>Virtual Accounts</p>
+      <h1 class="h-hero">Give every payment a place to land.</h1>
+      <p class="hero-sub">Share an account number your customers can transfer into from any banking app. Every transfer arrives with its sender and reference — and lands straight in your Griv balance.</p>
+      <div class="hero-ctas">
+        <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+        <a href="#how" class="btn btn-lg btn-ghost">How it works</a>
+      </div>
+
+      <div class="dstage va-demo" data-demo="va">
+        <div class="ui va-acct">
+          <p class="va-k">Collect by transfer</p>
+          <div class="va-row"><small>Account name</small><b>Ade Fashion</b></div>
+          <div class="va-row"><small>Account number</small><b class="mono va-no">9012 345 678</b>
+            <button class="va-copy" type="button" data-copy="9012345678"><svg><use href="#i-copy"/></svg><span class="copy-l">Copy</span></button></div>
+          <div class="va-row"><small>Bank</small><b>Griv partner bank</b></div>
+          <p class="illus-note">Illustrative account details.</p>
+        </div>
+
+        <div class="va-flow" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="ui va-feed">
+          <div class="vf-head">
+            <span><small>Griv balance</small><b class="va-bal" data-start="2450000">₦2,450,000</b></span>
+            <span class="tag ok va-live"><i></i>Live</span>
+          </div>
+          <ul class="vf-list" aria-live="polite" aria-label="Incoming transfers"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2 h2-sm">Transfers in. Records done.</h2>
+    </header>
+    <ol class="steps reveal" style="--n:4;margin-top:64px">
+      <li><h3>Share your account number</h3><p>Put it on invoices, receipts, your shop counter or your social profile.</p></li>
+      <li><h3>Customer transfers</h3><p>They pay from whichever banking app they already use.</p></li>
+      <li><h3>Griv identifies it</h3><p>The transfer is recorded with the sender’s name, amount, time and reference.</p></li>
+      <li><h3>Your balance updates</h3><p>The money appears in your Griv balance, ready for payouts or settlement.</p></li>
+    </ol>
+
+    <div class="rows">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Every transfer, identified</p>
+          <h3 class="h3">No more “please confirm, I’ve sent it.”</h3>
+          <p class="muted">When a customer says they’ve paid, you don’t need to wait for a bank alert or ask for a screenshot. Each transfer shows who sent it, how much, and its reference — the moment it’s received.</p>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui va-detail">
+            <div class="lp-h"><b>Transfer received</b><span class="tag ok">Successful</span></div>
+            <p class="vd-amt pos">+₦185,000</p>
+            <dl>
+              <div><dt>From</dt><dd>Chidi Prints</dd></div>
+              <div><dt>Into</dt><dd>Ade Fashion · <span class="mono">9012 345 678</span></dd></div>
+              <div><dt>Reference</dt><dd class="mono">GRV-VA-88214</dd></div>
+              <div><dt>Received</dt><dd>Today, 10:42</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2 rev">
+        <div class="row-copy reveal">
+          <p class="kicker">One balance</p>
+          <h3 class="h3">Transfers, cards and links — all in the same place.</h3>
+          <p class="muted">Money that arrives by transfer sits alongside payments from links, invoices and your store. One balance, one history, one place to look.</p>
+          <ul class="ticks"><li>See every collection in one transaction history</li><li>Use your balance for <a href="/products/payouts/" class="ul">payouts</a></li><li>Matched automatically in <a href="/products/reconciliation/" class="ul">reconciliation</a></li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui va-mix">
+            <div class="lp-h"><b>Today’s collections</b><span class="muted" style="font-size:13px">Ade Fashion</span></div>
+            <ul>
+              <li><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Chidi Prints</b><small>Virtual account</small></span><em class="pos">+₦185,000</em></li>
+              <li><span class="mi"><svg><use href="#i-link"/></svg></span><span><b>Tolu A.</b><small>Payment link</small></span><em class="pos">+₦85,000</em></li>
+              <li><span class="mi"><svg><use href="#i-pos"/></svg></span><span><b>Walk-in customer</b><small>POS · Lekki store</small></span><em class="pos">+₦85,000</em></li>
+            </ul>
+            <div class="vm-tot"><span>Total today</span><b>₦355,000</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Use cases</p>
+      <h2 class="h2 h2-sm">For customers who’d rather transfer</h2>
+    </header>
+    <div class="cases">
+      <article class="case reveal"><span class="mi"><svg><use href="#i-store"/></svg></span><h3>At the counter</h3><p>Display your account number in-store so customers can pay by transfer, and see the payment arrive before they leave.</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-invoice"/></svg></span><h3>Business customers</h3><p>Larger customers often pay invoices by bank transfer. Each transfer is recorded with its reference.</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-users"/></svg></span><h3>Regular customers</h3><p>Customers who buy from you often can save your account number and pay the way they’re used to.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Connected</p>
+      <h2 class="h2">Where your transfers go next</h2>
+    </header>
+    <div class="links-grid reveal">
+      <a href="/products/invoices/"><span class="mi"><svg><use href="#i-invoice"/></svg></span><span><b>Invoices</b><small>Customers can pay invoices by transfer</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/payouts/"><span class="mi"><svg><use href="#i-send"/></svg></span><span><b>Payouts</b><small>Pay suppliers from the same balance</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>Transfers matched to their records</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>See how customers prefer to pay</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Virtual accounts, answered</h2></header>
+    <div class="faq">
+      <details><summary>Who holds the money in my virtual account?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Griv is a financial technology company, not a bank. Collections are provided in partnership with licensed partner institutions, and customer funds are held with a partner bank. See our <a href="/terms/">terms</a> for details.</p></div></details>
+      <details><summary>Can my customers pay from any bank?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Your customers can transfer to your account number from their own banking app. If you have a question about a specific bank, <a href="/contact/?topic=support">contact support</a>.</p></div></details>
+      <details><summary>How do I know a transfer is from the right customer?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Each transfer is recorded with the sender’s name, the amount, the time and a reference, so you can see who paid and what for.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Give your customers an easier way to pay." sub="An account number for your business, connected to everything else in Griv." button="Start for Free" href="{{signup}}"-->

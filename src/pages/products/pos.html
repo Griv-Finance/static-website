@@ -1,0 +1,155 @@
+<!--page {"title": "Point of Sale — Griv", "description": "Sell in-store with Griv Point of Sale. Every sale updates your inventory, transactions and reports — in sync with your online store.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph pos-hero">
+  <div class="wrap ph-in">
+    <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-pos"/></svg></span>Point of Sale</p>
+    <h1 class="h1">Your shop. Your sales. All in sync.</h1>
+    <p class="lede">Ring up sales at the counter and take payment — while Griv updates your stock, records the transaction and adds it to today’s sales.</p>
+    <div class="btn-row">
+      <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="#try" class="btn btn-lg btn-line">Try the register</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="try">
+  <div class="wrap">
+    <div class="pos-wrap reveal" data-demo="pos">
+      <div class="tablet pos-tab">
+        <div class="tablet-scr pos-app">
+          <div class="pa-top">
+            <span class="pa-store"><span class="av sm">AF</span>Ade Fashion · <b>Lekki store</b></span>
+            <span class="pa-who">Funke O.</span>
+          </div>
+          <div class="pa-body">
+            <div class="pa-prods" role="group" aria-label="Products — select to add to the sale">
+              <button type="button" class="pa-p" data-id="dress" data-name="Black Dress" data-price="85000"><span class="pa-img"><svg class="pd"><use href="#i-dress"/></svg></span><b>Black Dress</b><small>₦85,000</small><i class="pa-stock">23 left</i></button>
+              <button type="button" class="pa-p" data-id="kaftan" data-name="Adire Kaftan" data-price="65000"><span class="pa-img alt"><svg class="pd"><use href="#i-dress"/></svg></span><b>Adire Kaftan</b><small>₦65,000</small><i class="pa-stock">14 left</i></button>
+              <button type="button" class="pa-p" data-id="sandals" data-name="Beaded Sandals" data-price="35000"><span class="pa-img"><svg class="ps"><use href="#i-shoe"/></svg></span><b>Beaded Sandals</b><small>₦35,000</small><i class="pa-stock">3 left</i></button>
+              <button type="button" class="pa-p" data-id="bag" data-name="Leather Bag" data-price="120000"><span class="pa-img alt"><svg class="pb"><use href="#i-bag"/></svg></span><b>Leather Bag</b><small>₦120,000</small><i class="pa-stock">9 left</i></button>
+              <button type="button" class="pa-p" data-id="wrap" data-name="Ankara Headwrap" data-price="12000"><span class="pa-img"><svg class="pb"><use href="#i-bag"/></svg></span><b>Ankara Headwrap</b><small>₦12,000</small><i class="pa-stock">31 left</i></button>
+              <button type="button" class="pa-p" data-id="scarf" data-name="Silk Scarf" data-price="18000"><span class="pa-img alt"><svg class="pb"><use href="#i-bag"/></svg></span><b>Silk Scarf</b><small>₦18,000</small><i class="pa-stock">17 left</i></button>
+            </div>
+            <div class="pa-cart" aria-live="polite">
+              <div class="pc-h"><b>Current sale</b><small class="pc-ord">Order #1043</small></div>
+              <ul class="pc-lines"><li class="pc-empty">Tap a product to add it</li></ul>
+              <div class="pc-sum">
+                <div class="pc-tot"><span>Total</span><b class="pc-total">₦0</b></div>
+                <div class="pc-pay" role="radiogroup" aria-label="Payment method">
+                  <button type="button" role="radio" aria-checked="true" data-m="Transfer">Transfer</button>
+                  <button type="button" role="radio" aria-checked="false" data-m="Card">Card</button>
+                </div>
+                <button type="button" class="btn pc-charge" disabled>Charge</button>
+              </div>
+              <div class="pc-ok" hidden>
+                <span class="okc"><svg><use href="#i-check"/></svg></span>
+                <b>Paid</b><small class="pc-ok-d"></small>
+                <button type="button" class="btn btn-line pc-new">New sale</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="pos-side">
+        <p class="kicker">What updates</p>
+        <div class="ui ps-card">
+          <div class="lp-h"><b>Inventory</b><span class="muted" style="font-size:12.5px">All channels</span></div>
+          <ul class="ps-inv">
+            <li data-id="dress"><span>Black Dress</span><b>23</b></li>
+            <li data-id="sandals" class="low"><span>Beaded Sandals</span><b>3</b></li>
+            <li data-id="bag"><span>Leather Bag</span><b>9</b></li>
+          </ul>
+        </div>
+        <div class="ui ps-card">
+          <div class="lp-h"><b>Today’s sales</b><span class="muted" style="font-size:12.5px">Lekki store</span></div>
+          <p class="ps-today">₦<span class="ps-sum">170,000</span></p>
+          <small class="ps-n"><span class="ps-count">2</span> sales</small>
+        </div>
+        <div class="ui ps-card ps-last">
+          <div class="lp-h"><b>Latest transaction</b><span class="tag mute ps-st">—</span></div>
+          <p class="ps-tx muted">Complete a sale to see it recorded.</p>
+        </div>
+      </aside>
+    </div>
+    <p class="illus-note" style="text-align:center">Interactive demo with illustrative products and prices — no payment is taken.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">One sale, everywhere</p>
+      <h2 class="h2 h2-sm">What happens when you press Charge</h2>
+    </header>
+    <ol class="steps reveal" style="--n:4;margin-top:64px">
+      <li><h3>Payment</h3><p>Your customer pays by transfer or card and the payment is recorded against the sale.</p></li>
+      <li><h3>Inventory</h3><p>Stock for each item goes down — the same stock your online store sells from.</p></li>
+      <li><h3>Transactions</h3><p>The sale appears in your transaction history with its order number.</p></li>
+      <li><h3>Reporting</h3><p>Today’s sales update, so you can see how the shop is doing without counting the till.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="rows" style="margin-top:0">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Online and in-store</p>
+          <h3 class="h3">Sell the last one only once.</h3>
+          <p class="muted">Your shop and your online store share one inventory. When the last Black Dress sells at the counter, it’s no longer available online — so you never sell something you don’t have.</p>
+        </div>
+        <div class="row-art reveal">
+          <div class="pos-sync">
+            <div class="ui ps-ch"><span class="mi"><svg><use href="#i-pos"/></svg></span><span><b>Lekki store</b><small>Order #1043 · Black Dress</small></span><em class="tag ok">Sold</em></div>
+            <div class="ps-hub"><svg><use href="#mark"/></svg><span>Black Dress <b>23 → 22</b></span></div>
+            <div class="ui ps-ch"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online store</b><small>Black Dress</small></span><em class="tag mute">22 in stock</em></div>
+          </div>
+        </div>
+      </div>
+      <div class="row2 rev">
+        <div class="row-copy reveal">
+          <p class="kicker">Built for busy counters</p>
+          <h3 class="h3">Fast at the till, clear at closing time.</h3>
+          <p class="muted">Whether you run a boutique in Lekki, a phone shop at Computer Village or a supermarket in Abuja, your sales are recorded as they happen — no end-of-day notebook to reconcile.</p>
+          <ul class="ticks"><li>Products, prices and stock in one place</li><li>Transfer and card payments recorded against each sale</li><li>Daily totals without counting by hand</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui pos-close">
+            <div class="lp-h"><b>Closing summary</b><span class="muted" style="font-size:13px">Lekki store · Today</span></div>
+            <div class="pcl-big"><small>Total sales</small><b>₦612,000</b></div>
+            <div class="pcl-split"><div><small>Transfer</small><b>₦397,000</b><i style="--w:65%"></i></div><div><small>Card</small><b>₦215,000</b><i style="--w:35%"></i></div></div>
+            <div class="pcl-n"><span>9 sales</span><span>14 items</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Connected</p><h2 class="h2">Your counter, connected</h2></header>
+    <div class="links-grid reveal">
+      <a href="/products/inventory/"><span class="mi"><svg><use href="#i-box"/></svg></span><span><b>Inventory</b><small>Stock shared across every channel</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/online-store/"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online Store</b><small>Sell the same products online</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/virtual-accounts/"><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Virtual Accounts</b><small>Take transfers at the counter</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>Compare your shop and online sales</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Point of Sale, answered</h2></header>
+    <div class="faq">
+      <details><summary>Do I need special hardware?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>For the devices Griv Point of Sale runs on, <a href="/contact/?topic=sales">talk to us</a>.</p></div></details>
+      <details><summary>Does it work with my online store?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Yes. In-store sales and <a href="/products/online-store/">online orders</a> share the same products and inventory.</p></div></details>
+      <details><summary>How do customers pay in-store?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Customers can pay by bank transfer or card, and each payment is recorded against the sale.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Bring your shop into sync." sub="Sell in-store, and let Griv keep the rest of your business up to date." button="Start for Free" href="{{signup}}"-->

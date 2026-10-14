@@ -1,0 +1,122 @@
+<!--page {"title": "Subscriptions & Scheduled Payments — Griv", "description": "Collect recurring payments from customers and schedule payments to suppliers and staff. See every upcoming, paid and failed payment on one timeline.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph ph-split">
+  <div class="wrap ph-in">
+    <div class="ph-copy">
+      <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-repeat"/></svg></span>Subscriptions</p>
+      <h1 class="h1">Money that moves on schedule.</h1>
+      <p class="lede">Collect recurring payments from your customers, and schedule the payments your business makes — then see all of it on one timeline.</p>
+      <div class="btn-row">
+        <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+        <a href="#scheduled" class="btn btn-lg btn-line">Scheduled payments</a>
+      </div>
+    </div>
+    <div class="sb-plan" data-demo="sub">
+      <div class="ui sbp-card">
+        <div class="sbp-h"><span class="mi"><svg><use href="#i-repeat"/></svg></span><span><b>Style Club</b><small>Ade Fashion · Monthly plan</small></span><span class="tag ok">Active</span></div>
+        <p class="sbp-amt">₦25,000 <small>/ month</small></p>
+        <div class="sbp-who"><span class="av sm alt">KO</span><span>Kemi O.</span><small>Since August</small></div>
+        <ol class="sbp-tl" aria-label="Billing timeline">
+          <li class="paid"><i></i><b>Aug</b><small>Paid</small></li>
+          <li class="paid"><i></i><b>Sep</b><small>Paid</small></li>
+          <li class="paid"><i></i><b>Oct</b><small>Paid</small></li>
+          <li class="next"><i></i><b>Nov</b><small>Due 1 Nov</small></li>
+          <li><i></i><b>Dec</b><small>Upcoming</small></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="stage stage-glow sb-tl reveal">
+      <header class="sb-tl-h">
+        <div><p class="kicker">One timeline</p><h2 class="h3">Everything due in, and everything going out.</h2></div>
+        <div class="switch" role="group" aria-label="Filter the timeline">
+          <button type="button" class="sbf" aria-pressed="true" data-f="all">All</button>
+          <button type="button" class="sbf" aria-pressed="false" data-f="in">Money in</button>
+          <button type="button" class="sbf" aria-pressed="false" data-f="out">Money out</button>
+        </div>
+      </header>
+      <ol class="sb-days" aria-live="polite">
+        <li data-k="in"><span class="sd"><b>1</b><small>Nov</small></span><span class="sd-i"><span class="fi in"><svg><use href="#i-in"/></svg></span><span><b>Style Club · 28 members</b><small>Recurring · Monthly</small></span></span><em class="pos">+₦700,000</em><span class="tag mute">Upcoming</span></li>
+        <li data-k="out"><span class="sd"><b>1</b><small>Nov</small></span><span class="sd-i"><span class="fi"><svg><use href="#i-out"/></svg></span><span><b>Rent · Lekki store</b><small>Scheduled · Monthly</small></span></span><em>−₦300,000</em><span class="tag mute">Upcoming</span></li>
+        <li data-k="out"><span class="sd"><b>7</b><small>Nov</small></span><span class="sd-i"><span class="fi"><svg><use href="#i-out"/></svg></span><span><b>ABC Textiles</b><small>Scheduled · Weekly</small></span></span><em>−₦450,000</em><span class="tag mute">Upcoming</span></li>
+        <li data-k="in"><span class="sd"><b>15</b><small>Nov</small></span><span class="sd-i"><span class="fi in"><svg><use href="#i-in"/></svg></span><span><b>Oba Foods · Uniform service</b><small>Recurring · Monthly</small></span></span><em class="pos">+₦180,000</em><span class="tag mute">Upcoming</span></li>
+        <li data-k="out"><span class="sd"><b>28</b><small>Nov</small></span><span class="sd-i"><span class="fi"><svg><use href="#i-out"/></svg></span><span><b>Staff payroll · 8 people</b><small>Scheduled · Monthly</small></span></span><em>−₦1,250,000</em><span class="tag mute">Upcoming</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="rows" style="margin-top:0">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Subscriptions</p>
+          <h3 class="h3">Recurring revenue, without the reminders.</h3>
+          <p class="muted">Set up a plan with an amount and how often it’s due. Each payment is recorded against the customer, so you can see who’s up to date at a glance.</p>
+          <ul class="ticks"><li><b>Paid</b> — this period is settled</li><li><b>Due</b> — the next payment is coming up</li><li><b>Failed</b> — a payment didn’t go through, so you can follow up</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui pl-track tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>Member</th><th>Plan</th><th class="num">Amount</th><th>November</th></tr></thead>
+              <tbody>
+                <tr><td>Kemi O.</td><td>Style Club</td><td class="num">₦25,000</td><td><span class="tag warn">Due 1 Nov</span></td></tr>
+                <tr><td>Tolu A.</td><td>Style Club</td><td class="num">₦25,000</td><td><span class="tag ok">Paid</span></td></tr>
+                <tr><td>Ifeanyi N.</td><td>Style Club</td><td class="num">₦25,000</td><td><span class="tag err">Failed</span></td></tr>
+                <tr><td>Oba Foods</td><td>Uniform service</td><td class="num">₦180,000</td><td><span class="tag warn">Due 15 Nov</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2 rev" id="scheduled">
+        <div class="row-copy reveal">
+          <p class="kicker">Scheduled payments</p>
+          <h3 class="h3">The bills you pay every month, handled.</h3>
+          <p class="muted">Schedule rent, supplier orders and payroll to go out on a date, or every week or month. You can see what’s coming up before it leaves your balance.</p>
+          <a class="vs-go" href="/products/payouts/">More on payouts <svg class="ic"><use href="#i-chev"/></svg></a>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui sb-new">
+            <div class="lp-h"><b>Schedule a payment</b></div>
+            <label class="pl-f"><small>Pay</small><span>ABC Textiles</span></label>
+            <label class="pl-f"><small>Amount</small><span class="mono">₦ 450,000</span></label>
+            <div class="sb-freq"><span>Once</span><span class="on">Weekly</span><span>Monthly</span></div>
+            <label class="pl-f"><small>Starting</small><span>Friday, 7 November · 9:00</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Connected</p><h2 class="h2">Recurring, and recorded</h2></header>
+    <div class="links-grid reveal">
+      <a href="/products/payouts/"><span class="mi"><svg><use href="#i-send"/></svg></span><span><b>Payouts</b><small>Single, bulk and scheduled</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/invoices/"><span class="mi"><svg><use href="#i-invoice"/></svg></span><span><b>Invoices</b><small>For one-off work with line items</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>Each recurring payment matched</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>See your recurring revenue</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Subscriptions, answered</h2></header>
+    <div class="faq">
+      <details><summary>How often can a subscription be charged?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>For the billing intervals available to your business, <a href="/contact/?topic=sales">talk to us</a>.</p></div></details>
+      <details><summary>What happens if a subscription payment fails?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>The payment is shown as failed against the customer, so you can see who to follow up with.</p></div></details>
+      <details><summary>Can I change or stop a scheduled payment?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Upcoming scheduled payments are listed before they go out. For details on managing them, see the <a href="/help/">Help Centre</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Put your regular payments on schedule." sub="Recurring collections and scheduled payouts, on one timeline." button="Start for Free" href="{{signup}}"-->

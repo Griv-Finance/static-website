@@ -1,0 +1,102 @@
+<!--page {"title": "Inventory — Griv", "description": "Track stock across your online store and shop in one place. Every sale updates your inventory, and low stock is flagged before you run out.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph">
+  <div class="wrap ph-in">
+    <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-box"/></svg></span>Inventory</p>
+    <h1 class="h1">Know what you have. Know what you need.</h1>
+    <p class="lede">One stock count for your online store and your shop. Every sale updates it, and anything running low is flagged before a customer finds out the hard way.</p>
+    <div class="btn-row">
+      <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="#try" class="btn btn-lg btn-line">Record a sale</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="try">
+  <div class="wrap">
+    <div class="inv-demo stage reveal" data-demo="inventory">
+      <div class="ui inv-table">
+        <div class="it-h">
+          <div><b>Products</b><small>Ade Fashion · All channels</small></div>
+          <div class="it-acts" role="group" aria-label="Record a sale of the selected product">
+            <button type="button" class="btn btn-dark it-sell" data-ch="Online store"><svg class="ic"><use href="#i-store"/></svg>Online order</button>
+            <button type="button" class="btn btn-line it-sell" data-ch="Lekki store"><svg class="ic"><use href="#i-pos"/></svg>In-store sale</button>
+            <button type="button" class="btn btn-line it-restock"><svg class="ic"><use href="#i-plus"/></svg>Restock 20</button>
+          </div>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl it-tbl">
+            <caption class="sr-only">Products and stock. Select a row, then record a sale or restock.</caption>
+            <thead><tr><th scope="col"><span class="sr-only">Select</span></th><th scope="col">Product</th><th scope="col" class="num">Price</th><th scope="col" class="num">In stock</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr data-id="dress" data-low="5"><td><input type="radio" name="itp" aria-label="Select Black Dress" checked></td><td><span class="it-p"><span class="os-thumb"><svg class="pd"><use href="#i-dress"/></svg></span>Black Dress</span></td><td class="num">₦85,000</td><td class="num it-q">22</td><td class="it-s"></td></tr>
+              <tr data-id="kaftan" data-low="5"><td><input type="radio" name="itp" aria-label="Select Adire Kaftan"></td><td><span class="it-p"><span class="os-thumb alt"><svg class="pd"><use href="#i-dress"/></svg></span>Adire Kaftan</span></td><td class="num">₦65,000</td><td class="num it-q">14</td><td class="it-s"></td></tr>
+              <tr data-id="sandals" data-low="5"><td><input type="radio" name="itp" aria-label="Select Beaded Sandals"></td><td><span class="it-p"><span class="os-thumb"><svg class="ps"><use href="#i-shoe"/></svg></span>Beaded Sandals</span></td><td class="num">₦35,000</td><td class="num it-q">3</td><td class="it-s"></td></tr>
+              <tr data-id="bag" data-low="5"><td><input type="radio" name="itp" aria-label="Select Leather Bag"></td><td><span class="it-p"><span class="os-thumb alt"><svg class="pb"><use href="#i-bag"/></svg></span>Leather Bag</span></td><td class="num">₦120,000</td><td class="num it-q">9</td><td class="it-s"></td></tr>
+              <tr data-id="scarf" data-low="5"><td><input type="radio" name="itp" aria-label="Select Silk Scarf"></td><td><span class="it-p"><span class="os-thumb"><svg class="pb"><use href="#i-bag"/></svg></span>Silk Scarf</span></td><td class="num">₦18,000</td><td class="num it-q">0</td><td class="it-s"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <aside class="ui inv-log">
+        <div class="lp-h"><b>Stock activity</b></div>
+        <ol class="il-list" aria-live="polite">
+          <li><span class="il-ch">Lekki store</span><span>Black Dress sold · Order #1043</span><b>23 → 22</b></li>
+          <li><span class="il-ch">Online store</span><span>Black Dress sold · Order #1042</span><b>24 → 23</b></li>
+        </ol>
+      </aside>
+    </div>
+    <p class="illus-note" style="text-align:center">Interactive demo — select a product, then record a sale or a restock.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="rows" style="margin-top:0">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">One count, every channel</p>
+          <h3 class="h3">Online and in-store, always the same number.</h3>
+          <p class="muted">Tolu buys a Black Dress online at 9:14. A walk-in customer buys another at the Lekki store at 11:02. Your stock goes 24 → 23 → 22 — and both channels see the same count, every time.</p>
+        </div>
+        <div class="row-art reveal">
+          <div class="inv-flow">
+            <div class="ui ifl-e"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online · Order #1042</b><small>Tolu A. · 9:14</small></span><em>24 → 23</em></div>
+            <div class="ui ifl-e"><span class="mi"><svg><use href="#i-pos"/></svg></span><span><b>Lekki store · Order #1043</b><small>Walk-in · 11:02</small></span><em>23 → 22</em></div>
+            <div class="ifl-res"><svg><use href="#i-dress"/></svg><span>Black Dress</span><b>22 in stock</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="row2 rev">
+        <div class="row-copy reveal">
+          <p class="kicker">Low stock</p>
+          <h3 class="h3">Restock before you run out.</h3>
+          <p class="muted">Products that are running low are flagged, and sold-out items are marked so you know what to reorder — and when to pay your supplier.</p>
+          <ul class="ticks"><li><b>In stock</b> — plenty to sell</li><li><b>Low</b> — time to reorder</li><li><b>Sold out</b> — no longer available to buy</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui inv-alert">
+            <div class="ia-h"><span class="ia-ic"><svg><use href="#i-alert"/></svg></span><b>2 products need attention</b></div>
+            <div class="ia-r"><span>Beaded Sandals</span><span class="tag warn">Low · 3 left</span></div>
+            <div class="ia-r"><span>Silk Scarf</span><span class="tag err">Sold out</span></div>
+            <a class="ia-go" href="/products/payouts/">Pay your supplier with Payouts <svg class="ic"><use href="#i-chev"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Connected</p><h2 class="h2">Stock that knows about your sales</h2></header>
+    <div class="links-grid reveal">
+      <a href="/products/online-store/"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online Store</b><small>Orders reduce stock automatically</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/pos/"><span class="mi"><svg><use href="#i-pos"/></svg></span><span><b>Point of Sale</b><small>In-store sales, same count</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>See which products sell fastest</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/ai/"><span class="mi"><svg><use href="#i-spark"/></svg></span><span><b>Griv AI</b><small>“Which products are running low?”</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Never sell what you don’t have." sub="One inventory for every place you sell." button="Start for Free" href="{{signup}}"-->

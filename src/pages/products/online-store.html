@@ -1,0 +1,153 @@
+<!--page {"title": "Online Store — Griv", "description": "Put your products online with a Griv store. Customers browse, check out and pay — and every order updates your inventory and records automatically.", "nav": "dark", "scripts": ["/js/demos.js"]} -->
+
+<section class="hero hero-page">
+  <div class="hero-panel">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-in">
+      <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-store"/></svg></span>Online Store</p>
+      <h1 class="h-hero">Your products, ready for the world to buy.</h1>
+      <p class="hero-sub">A storefront for your business that takes payment, creates orders and updates your stock — so selling online doesn’t mean another system to manage.</p>
+      <div class="hero-ctas">
+        <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+        <a href="#journey" class="btn btn-lg btn-ghost">Follow an order</a>
+      </div>
+
+      <div class="dstage os-demo" data-tabs data-autoplay="3600" id="journey">
+        <div class="switch" role="tablist" aria-label="Online order demo">
+          <button role="tab" id="os-t1" aria-controls="os-p1" aria-selected="true"><i>1</i>Browse</button>
+          <button role="tab" id="os-t2" aria-controls="os-p2" aria-selected="false" tabindex="-1"><i>2</i>Product</button>
+          <button role="tab" id="os-t3" aria-controls="os-p3" aria-selected="false" tabindex="-1"><i>3</i>Checkout</button>
+          <button role="tab" id="os-t4" aria-controls="os-p4" aria-selected="false" tabindex="-1"><i>4</i>Confirmed</button>
+        </div>
+        <p class="sr-only" id="os-p1" role="tabpanel" aria-labelledby="os-t1">Tolu browses Ade Fashion’s online store.</p>
+        <p class="sr-only" id="os-p2" role="tabpanel" aria-labelledby="os-t2" hidden>Tolu opens the Black Dress, ₦85,000, size 12.</p>
+        <p class="sr-only" id="os-p3" role="tabpanel" aria-labelledby="os-t3" hidden>Tolu checks out and pays ₦85,000.</p>
+        <p class="sr-only" id="os-p4" role="tabpanel" aria-labelledby="os-t4" hidden>Order #1042 is confirmed. Ade Fashion sees the new order, the payment, and Black Dress stock drop from 24 to 23.</p>
+
+        <div class="os-board" aria-hidden="true">
+          <div class="browser os-br">
+            <div class="bw-bar"><span class="bw-dots"><i></i><i></i><i></i></span><span class="bw-url">adefashion.griv.store</span></div>
+            <div class="os-view">
+              <!-- 1 Browse -->
+              <div class="os-s os-s1">
+                <div class="os-nav"><b>ADE FASHION</b><span>New in</span><span>Dresses</span><span>Accessories</span><span class="os-bag">Bag · 0</span></div>
+                <div class="os-grid">
+                  <div class="os-item hot"><span class="os-img"><svg class="pd"><use href="#i-dress"/></svg></span><b>Black Dress</b><small>₦85,000</small></div>
+                  <div class="os-item"><span class="os-img alt"><svg class="pd"><use href="#i-dress"/></svg></span><b>Adire Kaftan</b><small>₦65,000</small></div>
+                  <div class="os-item"><span class="os-img"><svg class="ps"><use href="#i-shoe"/></svg></span><b>Beaded Sandals</b><small>₦35,000</small></div>
+                  <div class="os-item"><span class="os-img alt"><svg class="pb"><use href="#i-bag"/></svg></span><b>Leather Bag</b><small>₦120,000</small></div>
+                </div>
+              </div>
+              <!-- 2 Product -->
+              <div class="os-s os-s2">
+                <span class="os-big"><svg class="pd"><use href="#i-dress"/></svg></span>
+                <div class="os-pd">
+                  <small>Dresses</small><b>Black Dress</b><p class="os-price">₦85,000</p>
+                  <p class="os-desc">Tailored in Lagos. Midi length, fitted waist.</p>
+                  <div class="os-sizes"><span>8</span><span>10</span><span class="on">12</span><span>14</span></div>
+                  <span class="os-cta">Add to bag</span>
+                  <small class="os-st">23 in stock</small>
+                </div>
+              </div>
+              <!-- 3 Checkout -->
+              <div class="os-s os-s3">
+                <div class="os-co">
+                  <b>Checkout</b>
+                  <label class="pl-f"><small>Name</small><span>Tolu A.</span></label>
+                  <label class="pl-f"><small>Delivery</small><span>Yaba, Lagos</span></label>
+                  <div class="pp-opts"><span class="on"><i></i>Bank transfer</span><span><i></i>Card</span></div>
+                </div>
+                <div class="os-sum">
+                  <div class="os-line"><span class="os-thumb"><svg class="pd"><use href="#i-dress"/></svg></span><span>Black Dress · 12</span><b>₦85,000</b></div>
+                  <div class="os-line t"><span>Total</span><b>₦85,000</b></div>
+                  <span class="os-cta">Pay ₦85,000</span>
+                </div>
+              </div>
+              <!-- 4 Confirmed -->
+              <div class="os-s os-s4">
+                <span class="okc"><svg><use href="#i-check"/></svg></span>
+                <b>Thank you, Tolu!</b>
+                <p>Order <span class="mono">#1042</span> is confirmed. Ade Fashion will be in touch about delivery.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-merchant">
+            <p class="os-mk">Ade Fashion sees</p>
+            <div class="ui os-m os-m1"><span class="fi"><b>#</b></span><span><b>New order #1042</b><small>Tolu A. · Online store</small></span><em class="tag ok">Paid</em></div>
+            <div class="ui os-m os-m2"><span class="fi in"><svg><use href="#i-in"/></svg></span><span><b>Payment received</b><small>Bank transfer</small></span><em class="pos">+₦85,000</em></div>
+            <div class="ui os-m os-m3"><span class="fi dress"><svg><use href="#i-dress"/></svg></span><span><b>Black Dress</b><small>Inventory updated</small></span><em class="tag">24 → 23</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Everything in one store</p>
+      <h2 class="h2 h2-sm">A storefront that runs the back office for you</h2>
+    </header>
+    <div class="os-bento">
+      <article class="tile reveal os-b1">
+        <div class="art">
+          <div class="ui os-cat">
+            <div class="lp-h"><b>Products</b><span class="pl-new"><svg><use href="#i-plus"/></svg>Add product</span></div>
+            <ul><li><span class="os-thumb"><svg class="pd"><use href="#i-dress"/></svg></span><span>Black Dress</span><em>₦85,000</em><small>23</small></li><li><span class="os-thumb alt"><svg class="pd"><use href="#i-dress"/></svg></span><span>Adire Kaftan</span><em>₦65,000</em><small>14</small></li><li><span class="os-thumb"><svg class="pb"><use href="#i-bag"/></svg></span><span>Leather Bag</span><em>₦120,000</em><small>9</small></li></ul>
+          </div>
+        </div>
+        <h3>Your catalogue</h3><p>Add products with photos, prices and stock — once — and sell them online and in-store.</p>
+      </article>
+      <article class="tile reveal os-b2">
+        <div class="art">
+          <div class="pp-opts os-pay"><span class="on"><i></i>Bank transfer</span><span><i></i>Card</span></div>
+        </div>
+        <h3>Checkout built in</h3><p>Customers pay by bank transfer or card, without leaving your store.</p>
+      </article>
+      <article class="tile reveal os-b3">
+        <div class="art">
+          <div class="ui os-orders">
+            <div><span class="mono">#1042</span><span>Tolu A.</span><em class="tag ok">Paid</em></div>
+            <div><span class="mono">#1044</span><span>Kemi O.</span><em class="tag warn">Pending</em></div>
+            <div><span class="mono">#1045</span><span>Bisi A.</span><em class="tag ok">Paid</em></div>
+          </div>
+        </div>
+        <h3>Orders in one list</h3><p>Every order with its customer, items and payment status.</p>
+      </article>
+      <article class="tile reveal os-b4">
+        <div class="art">
+          <div class="os-cust"><span class="av">TA</span><span><b>Tolu A.</b><small>3 orders · Yaba, Lagos</small></span></div>
+        </div>
+        <h3>Know your customers</h3><p>See who buys from you and what they’ve ordered before.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Connected</p><h2 class="h2">One order, every record</h2><p class="sub">When Tolu’s payment lands, order #1042 is created, the Black Dress count goes from 24 to 23, and the sale shows up in your reports.</p></header>
+    <div class="links-grid reveal">
+      <a href="/products/inventory/"><span class="mi"><svg><use href="#i-box"/></svg></span><span><b>Inventory</b><small>Stock updates with every order</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/pos/"><span class="mi"><svg><use href="#i-pos"/></svg></span><span><b>Point of Sale</b><small>The same products in your shop</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/payment-links/"><span class="mi"><svg><use href="#i-link"/></svg></span><span><b>Payment Links</b><small>Sell a product straight from a chat</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>Your best-selling products and channels</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Online Store, answered</h2></header>
+    <div class="faq">
+      <details><summary>Do I need a developer to set up my store?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>No. You add your products in Griv. If you’d rather build your own storefront, see <a href="/developers/">Griv for developers</a>.</p></div></details>
+      <details><summary>How do customers pay?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>By bank transfer or card at checkout. Each payment is attached to its order.</p></div></details>
+      <details><summary>What happens to my stock when someone orders?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>It updates automatically, and the same count is used by your <a href="/products/pos/">in-store Point of Sale</a>.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Open your store to the world." sub="Products, checkout, orders and stock — together from day one." button="Start for Free" href="{{signup}}"-->

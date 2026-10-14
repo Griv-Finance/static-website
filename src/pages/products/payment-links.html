@@ -1,0 +1,197 @@
+<!--page {"title": "Payment Links — Griv", "description": "Create a payment link in seconds, share it anywhere, and get paid by card or bank transfer. Every payment is tracked and connected to your orders and records.", "nav": "dark", "scripts": ["/js/demos.js"]} -->
+
+<section class="hero hero-page">
+  <div class="hero-panel">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-in">
+      <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-link"/></svg></span>Payment Links</p>
+      <h1 class="h-hero">Getting paid should be the easy part.</h1>
+      <p class="hero-sub">Create a payment link in seconds, share it wherever your customers are, and watch the money arrive — tracked, matched and ready to use.</p>
+      <div class="hero-ctas">
+        <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+        <a href="#how" class="btn btn-lg btn-ghost">How it works</a>
+      </div>
+
+      <div class="dstage pl-demo" data-demo="paylink" data-tabs data-autoplay="3800">
+        <div class="switch" role="tablist" aria-label="Payment link demo">
+          <button role="tab" id="pl-t1" aria-controls="pl-p1" aria-selected="true"><i>1</i>Create</button>
+          <button role="tab" id="pl-t2" aria-controls="pl-p2" aria-selected="false" tabindex="-1"><i>2</i>Share</button>
+          <button role="tab" id="pl-t3" aria-controls="pl-p3" aria-selected="false" tabindex="-1"><i>3</i>Get paid</button>
+        </div>
+        <p class="sr-only" id="pl-p1" role="tabpanel" aria-labelledby="pl-t1">Step 1: Ade Fashion creates a payment link for a Black Dress, ₦85,000.</p>
+        <p class="sr-only" id="pl-p2" role="tabpanel" aria-labelledby="pl-t2" hidden>Step 2: the link griv.fi/pay/ade-fashion is shared with Tolu A. in a chat.</p>
+        <p class="sr-only" id="pl-p3" role="tabpanel" aria-labelledby="pl-t3" hidden>Step 3: Tolu pays by bank transfer; Ade Fashion sees “Payment received +₦85,000”.</p>
+
+        <div class="pl-board" aria-hidden="true">
+          <!-- Merchant: create -->
+          <div class="ui pl-create">
+            <div class="pl-h"><b>New payment link</b><span class="tag mute">Draft</span></div>
+            <label class="pl-f"><small>Title</small><span>Black Dress</span></label>
+            <label class="pl-f"><small>Amount</small><span class="mono">₦ 85,000</span></label>
+            <label class="pl-f"><small>Description</small><span>Size 12 · Delivery in Lagos</span></label>
+            <span class="pl-btn">Create link</span>
+            <div class="pl-made"><svg><use href="#i-link"/></svg><span class="mono">griv.fi/pay/ade-fashion</span><em>Copy</em></div>
+          </div>
+
+          <!-- Customer phone -->
+          <div class="phone pl-phone">
+            <div class="phone-scr">
+              <div class="pl-chat">
+                <p class="who"><span class="av sm alt">TA</span>Tolu A.</p>
+                <p class="b in">Hi! Is the black dress still available in size 12?</p>
+                <p class="b out">Yes it is 😊 You can pay here:</p>
+                <p class="b out link"><svg><use href="#i-link"/></svg>griv.fi/pay/ade-fashion</p>
+              </div>
+              <div class="pl-pay">
+                <div class="pp-head"><span class="av">AF</span><b>Ade Fashion</b><small>Black Dress · Size 12</small></div>
+                <p class="pp-amt">₦85,000</p>
+                <div class="pp-opts"><span class="on"><i></i>Bank transfer</span><span><i></i>Card</span></div>
+                <span class="pp-btn">Pay ₦85,000</span>
+                <div class="pp-ok"><span class="okc"><svg><use href="#i-check"/></svg></span><b>Payment successful</b><small>Ade Fashion has been notified</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Merchant: paid -->
+          <div class="pl-side">
+            <div class="ui pl-note"><span class="fi in"><svg><use href="#i-in"/></svg></span><span><b>Payment received</b><small>Tolu A. · Payment link</small></span><em class="pos">+₦85,000</em></div>
+            <div class="ui pl-tx">
+              <div class="pl-h"><b>Transaction</b><span class="tag ok">Successful</span></div>
+              <dl>
+                <div><dt>Reference</dt><dd class="mono">GRV-PL-1042</dd></div>
+                <div><dt>Customer</dt><dd>Tolu A.</dd></div>
+                <div><dt>Method</dt><dd>Bank transfer</dd></div>
+                <div><dt>Order</dt><dd>#1042 · Black Dress</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2 h2-sm">From “how do I pay?” to paid, in three steps</h2>
+    </header>
+    <ol class="steps reveal" style="--n:3;margin-top:64px">
+      <li><h3>Create a link</h3><p>Add what you’re selling and how much it costs. Your link is ready instantly — no website needed.</p></li>
+      <li><h3>Share it anywhere</h3><p>Paste it into WhatsApp, Instagram DMs, SMS or email. Customers open it on any phone or computer.</p></li>
+      <li><h3>Get paid and tracked</h3><p>Your customer pays by card or bank transfer. You’re notified, and the payment lands in your Griv balance with its full record.</p></li>
+    </ol>
+
+    <div class="rows">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Creating &amp; sharing</p>
+          <h3 class="h3">A link for every sale.</h3>
+          <p class="muted">Make a link for the order you’re confirming in a chat, the deposit you need before a fitting, or the job you’ve just finished. Name it clearly, so you always know what each payment was for.</p>
+          <ul class="ticks"><li>Clear titles and descriptions your customers can trust</li><li>Copy and share in one tap</li><li>Every link listed in one place, with its payments</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui pl-list">
+            <div class="pl-h"><b>Payment links</b><span class="pl-new"><svg><use href="#i-plus"/></svg>New link</span></div>
+            <ul>
+              <li><span><b>Black Dress</b><small class="mono">griv.fi/pay/ade-fashion</small></span><em>₦85,000</em></li>
+              <li><span><b>Adire Kaftan</b><small>Created today</small></span><em>₦65,000</em></li>
+              <li><span><b>Fitting deposit · Kemi O.</b><small>Created yesterday</small></span><em>₦10,000</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2 rev">
+        <div class="row-copy reveal">
+          <p class="kicker">Checkout</p>
+          <h3 class="h3">A checkout your customers recognise.</h3>
+          <p class="muted">Customers see your business name, what they’re paying for and the exact amount — then pay the way they already do, by bank transfer or card. No account to create, no app to download.</p>
+          <ul class="ticks"><li><b>Bank transfer</b> for customers who prefer to pay from their banking app</li><li><b>Card</b> for customers paying online</li><li>A clear confirmation for your customer, and a notification for you</li></ul>
+        </div>
+        <div class="row-art reveal pl-co">
+          <div class="phone">
+            <div class="phone-scr">
+              <div class="co-in">
+                <div class="pp-head"><span class="av">AF</span><b>Ade Fashion</b><small>Adire Kaftan</small></div>
+                <p class="pp-amt">₦65,000</p>
+                <p class="co-k">Pay with</p>
+                <div class="co-m on"><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Bank transfer</b><small>Transfer from any bank app</small></span><i></i></div>
+                <div class="co-m"><span class="mi"><svg><use href="#i-card"/></svg></span><span><b>Card</b><small>Debit or credit card</small></span><i></i></div>
+                <span class="pp-btn">Continue</span>
+                <p class="co-sec"><svg><use href="#i-shield"/></svg>Secured by Griv</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Tracking</p>
+          <h3 class="h3">Know which payments have landed — and which haven’t.</h3>
+          <p class="muted">Every payment made through a link is recorded with its customer, amount, method, reference and status. No more scrolling through chats or bank alerts to check who has paid.</p>
+          <ul class="ticks"><li><b>Successful</b> — the money is in your balance</li><li><b>Pending</b> — the payment has started and is being confirmed</li><li><b>Failed</b> — the payment didn’t go through, so you can follow up</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui pl-track tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>Customer</th><th>Link</th><th class="num">Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Tolu A.</td><td>Black Dress</td><td class="num">₦85,000</td><td><span class="tag ok">Successful</span></td></tr>
+                <tr><td>Kemi O.</td><td>Fitting deposit</td><td class="num">₦10,000</td><td><span class="tag ok">Successful</span></td></tr>
+                <tr><td>Ifeanyi N.</td><td>Adire Kaftan</td><td class="num">₦65,000</td><td><span class="tag warn">Pending</span></td></tr>
+                <tr><td>Bisi A.</td><td>Fitting deposit</td><td class="num">₦10,000</td><td><span class="tag err">Failed</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Use cases</p>
+      <h2 class="h2 h2-sm">Made for how African businesses sell</h2>
+    </header>
+    <div class="cases">
+      <article class="case reveal"><span class="mi"><svg><use href="#i-users"/></svg></span><h3>Selling in chats</h3><p>Confirm the order on WhatsApp or Instagram, send a link, and stop chasing screenshots of transfers.</p><p class="eg">Ade Fashion · Black Dress, ₦85,000</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-clock"/></svg></span><h3>Deposits &amp; bookings</h3><p>Take a deposit before a fitting, an event or a delivery — send the link the moment the booking is agreed.</p><p class="eg">Ade Fashion · Fitting deposit, ₦10,000</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-invoice"/></svg></span><h3>Services &amp; freelance work</h3><p>Send a link for a one-off job — or use an <a href="/products/invoices/">invoice</a> when you need line items and a due date.</p><p class="eg">Chidi Prints · design work</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Connected</p>
+      <h2 class="h2">A link is just the start</h2>
+      <p class="sub">When Tolu pays for the Black Dress, Griv creates the order, updates stock and records the payment — so the rest of your business knows straight away.</p>
+    </header>
+    <div class="links-grid reveal">
+      <a href="/products/invoices/"><span class="mi"><svg><use href="#i-invoice"/></svg></span><span><b>Invoices</b><small>Every invoice comes with its own payment link</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/online-store/"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online Store</b><small>Payments become orders automatically</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/inventory/"><span class="mi"><svg><use href="#i-box"/></svg></span><span><b>Inventory</b><small>Stock updates when a product is paid for</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>Each payment matched to its records</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Payment links, answered</h2></header>
+    <div class="faq">
+      <details><summary>Does my customer need a Griv account to pay?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>No. Your customer opens the link in their browser and pays by bank transfer or card. Only your business needs a Griv account.</p></div></details>
+      <details><summary>Do I need a website to use payment links?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>No. Payment links work on their own — you can share them in any chat, social post, text message or email.</p></div></details>
+      <details><summary>Where does the money go?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Successful payments appear in your Griv balance with the customer, amount and reference, ready to use for <a href="/products/payouts/">payouts</a> or to settle to your bank account.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a> for current pricing.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Send your first payment link today." sub="Create, share and get paid — all from one place." button="Start for Free" href="{{signup}}"-->

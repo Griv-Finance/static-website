@@ -1,0 +1,177 @@
+<!--page {"title": "Invoices — Griv", "description": "Create professional invoices, send them to customers, and get paid online. Track every invoice from draft to paid, connected to your payments and records.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph ph-split inv-hero">
+  <div class="wrap ph-in">
+    <div class="ph-copy">
+      <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-invoice"/></svg></span>Invoices</p>
+      <h1 class="h1">Get paid for the work you do.</h1>
+      <p class="lede">Send clear, professional invoices your customers can pay online — and always know which ones are paid, viewed or overdue.</p>
+      <div class="btn-row">
+        <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+        <a href="#lifecycle" class="btn btn-lg btn-line">See the invoice lifecycle</a>
+      </div>
+    </div>
+
+    <div class="inv-stage" aria-label="Example invoice from Ade Fashion to Chidi Prints">
+      <article class="invoice">
+        <header class="iv-top">
+          <div class="iv-from"><span class="av">AF</span><span><b>Ade Fashion</b><small>14 Admiralty Way, Lekki, Lagos</small></span></div>
+          <div class="iv-no"><small>Invoice</small><b class="mono">#2041</b></div>
+        </header>
+        <div class="iv-meta">
+          <div><small>Billed to</small><b>Chidi Prints</b><span>accounts@chidiprints.ng</span></div>
+          <div><small>Issued</small><b>31 October</b></div>
+          <div><small>Due</small><b>14 November</b></div>
+        </div>
+        <table class="iv-lines">
+          <thead><tr><th>Item</th><th class="num">Qty</th><th class="num">Price</th><th class="num">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Branded staff shirts</td><td class="num">20</td><td class="num">₦15,000</td><td class="num">₦300,000</td></tr>
+            <tr><td>Adire Kaftan</td><td class="num">2</td><td class="num">₦65,000</td><td class="num">₦130,000</td></tr>
+            <tr><td>Delivery · Lagos</td><td class="num">1</td><td class="num">₦20,000</td><td class="num">₦20,000</td></tr>
+          </tbody>
+        </table>
+        <footer class="iv-foot">
+          <div class="iv-total"><small>Total due</small><b>₦450,000</b></div>
+          <span class="iv-pay">Pay invoice</span>
+        </footer>
+        <span class="iv-stamp" aria-hidden="true"><svg><use href="#i-check"/></svg>Paid</span>
+      </article>
+      <div class="ui iv-float" aria-hidden="true"><span class="fi in"><svg><use href="#i-in"/></svg></span><span><b>Invoice #2041 paid</b><small>Chidi Prints · Bank transfer</small></span><em class="pos">+₦450,000</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="lifecycle">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">The invoice lifecycle</p>
+      <h2 class="h2 h2-sm">From draft to paid, without the follow-up</h2>
+      <p class="sub">Follow Invoice #2041 through each stage. Select a stage to see what Ade Fashion sees.</p>
+    </header>
+
+    <div class="life reveal" data-tabs data-autoplay="3400">
+      <div class="life-rail" role="tablist" aria-label="Invoice status">
+        <button role="tab" id="iv-t1" aria-controls="iv-p1" aria-selected="true"><span class="lr-dot"></span><b>Draft</b><small>Add items and a due date</small></button>
+        <button role="tab" id="iv-t2" aria-controls="iv-p2" aria-selected="false" tabindex="-1"><span class="lr-dot"></span><b>Sent</b><small>Emailed with a pay link</small></button>
+        <button role="tab" id="iv-t3" aria-controls="iv-p3" aria-selected="false" tabindex="-1"><span class="lr-dot"></span><b>Viewed</b><small>Your customer opened it</small></button>
+        <button role="tab" id="iv-t4" aria-controls="iv-p4" aria-selected="false" tabindex="-1"><span class="lr-dot"></span><b>Paid</b><small>Money in your balance</small></button>
+      </div>
+      <div class="life-panels">
+        <div class="ui life-p" id="iv-p1" role="tabpanel" aria-labelledby="iv-t1">
+          <div class="lp-h"><b>Invoice #2041</b><span class="tag mute">Draft</span></div>
+          <p>Ade Fashion adds three line items for Chidi Prints, sets the due date to 14 November, and checks the total: <b>₦450,000</b>.</p>
+          <div class="lp-act"><span class="btn-sm-dark">Send invoice</span><span class="lp-hint">Nothing is sent until you choose to send it.</span></div>
+        </div>
+        <div class="ui life-p" id="iv-p2" role="tabpanel" aria-labelledby="iv-t2" hidden>
+          <div class="lp-h"><b>Invoice #2041</b><span class="tag dark">Sent</span></div>
+          <p>Chidi Prints receives the invoice by email with a link to pay online. Ade Fashion can also copy the link and share it in a chat.</p>
+          <div class="lp-act"><span class="lp-link mono"><svg><use href="#i-link"/></svg>griv.fi/pay/ade-fashion/2041</span></div>
+        </div>
+        <div class="ui life-p" id="iv-p3" role="tabpanel" aria-labelledby="iv-t3" hidden>
+          <div class="lp-h"><b>Invoice #2041</b><span class="tag warn">Viewed</span></div>
+          <p>Chidi Prints has opened the invoice. If the due date passes without payment, the invoice shows as <b>Overdue</b> so Ade Fashion knows to follow up.</p>
+          <div class="lp-act"><span class="lp-hint"><svg class="ic"><use href="#i-clock"/></svg>Due 14 November</span></div>
+        </div>
+        <div class="ui life-p" id="iv-p4" role="tabpanel" aria-labelledby="iv-t4" hidden>
+          <div class="lp-h"><b>Invoice #2041</b><span class="tag ok">Paid</span></div>
+          <p>Chidi Prints pays ₦450,000 by bank transfer. The invoice is marked paid, the payment appears in Ade Fashion’s balance, and the transaction is linked to the invoice.</p>
+          <div class="lp-act"><span class="pos lp-amt">+₦450,000</span><span class="lp-hint">Reference GRV-INV-2041</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rows">
+      <div class="row2">
+        <div class="row-copy reveal">
+          <p class="kicker">Creating invoices</p>
+          <h3 class="h3">Professional, without the spreadsheet.</h3>
+          <p class="muted">Add your customer, line items, quantities and prices, and Griv does the maths. Every invoice carries your business name and a clear due date, so your customers know exactly what they owe and when.</p>
+          <ul class="ticks"><li>Line items with quantities and prices</li><li>Totals calculated for you</li><li>Customer details saved for the next invoice</li></ul>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui iv-builder">
+            <div class="lp-h"><b>New invoice</b><span class="tag mute">Draft</span></div>
+            <label class="pl-f"><small>Customer</small><span>Oba Foods · finance@obafoods.ng</span></label>
+            <div class="ivb-lines">
+              <div><span>Chef jackets</span><span class="mono">× 30</span><b>₦900,000</b></div>
+              <div><span>Aprons</span><span class="mono">× 50</span><b>₦350,000</b></div>
+              <div class="add"><svg><use href="#i-plus"/></svg>Add item</div>
+            </div>
+            <div class="ivb-tot"><span>Total</span><b>₦1,250,000</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2 rev">
+        <div class="row-copy reveal">
+          <p class="kicker">Tracking</p>
+          <h3 class="h3">See every invoice, and what it’s waiting on.</h3>
+          <p class="muted">One list shows what you’ve sent, what’s been paid, and what’s overdue — so you can spend your time following up on the invoices that need it.</p>
+        </div>
+        <div class="row-art reveal">
+          <div class="ui pl-track tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>Invoice</th><th>Customer</th><th class="num">Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">#2041</td><td>Chidi Prints</td><td class="num">₦450,000</td><td><span class="tag ok">Paid</span></td></tr>
+                <tr><td class="mono">#2042</td><td>Oba Foods</td><td class="num">₦1,250,000</td><td><span class="tag warn">Viewed</span></td></tr>
+                <tr><td class="mono">#2039</td><td>Lagos Gadget Hub</td><td class="num">₦180,000</td><td><span class="tag err">Overdue</span></td></tr>
+                <tr><td class="mono">#2043</td><td>Kemi’s Kitchen</td><td class="num">₦95,000</td><td><span class="tag mute">Draft</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="stage stage-glow iv-vs">
+      <div class="vs-col reveal">
+        <span class="mi"><svg><use href="#i-link"/></svg></span>
+        <h3 class="h3">Use a payment link when…</h3>
+        <p class="muted">it’s a quick sale or a deposit, and you just need to say how much.</p>
+        <a href="/products/payment-links/" class="vs-go">Payment Links <svg class="ic"><use href="#i-chev"/></svg></a>
+      </div>
+      <div class="vs-col reveal">
+        <span class="mi"><svg><use href="#i-invoice"/></svg></span>
+        <h3 class="h3">Use an invoice when…</h3>
+        <p class="muted">you need line items, a due date and a document your customer can keep for their records.</p>
+        <span class="vs-go here">You’re here</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Connected</p>
+      <h2 class="h2">Invoices that update your books</h2>
+      <p class="sub">When an invoice is paid, the payment is linked to it in your transaction history and matched in reconciliation — no copying numbers between tools.</p>
+    </header>
+    <div class="links-grid reveal">
+      <a href="/products/payment-links/"><span class="mi"><svg><use href="#i-link"/></svg></span><span><b>Payment Links</b><small>Every invoice includes a link to pay</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/virtual-accounts/"><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Virtual Accounts</b><small>Customers can pay by transfer</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>Payments matched to invoices</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/analytics/"><span class="mi"><svg><use href="#i-chart"/></svg></span><span><b>Analytics</b><small>See what’s owed and what’s been paid</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Invoices, answered</h2></header>
+    <div class="faq">
+      <details><summary>How do my customers pay an invoice?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Each invoice includes a link to pay online. Your customer opens it and pays by bank transfer or card — no Griv account needed.</p></div></details>
+      <details><summary>What happens when an invoice is paid?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>The invoice is marked paid, the money appears in your Griv balance, and the payment is linked to the invoice in your transaction history.</p></div></details>
+      <details><summary>Can I see which invoices are overdue?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Yes. Invoices that pass their due date without payment are shown as overdue in your invoice list.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Send an invoice. Get paid online." sub="Professional invoices, connected to the rest of your business." button="Start for Free" href="{{signup}}"-->

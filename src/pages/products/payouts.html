@@ -1,0 +1,153 @@
+<!--page {"title": "Payouts — Griv", "description": "Pay suppliers, staff and partners from your Griv balance — one at a time, in bulk, or on a schedule. Every payout is recorded and reconciled.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph">
+  <div class="wrap ph-in">
+    <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-send"/></svg></span>Payouts</p>
+    <h1 class="h1">Pay people and businesses without the busywork.</h1>
+    <p class="lede">Pay a supplier, run payroll for your team, or set up a payment that goes out every week — straight from your Griv balance, with a record of every naira.</p>
+    <div class="btn-row">
+      <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="#history" class="btn btn-lg btn-line">See payout history</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="stage stage-glow po-stage reveal" data-tabs data-demo="payout">
+      <div class="switch" role="tablist" aria-label="Payout type">
+        <button role="tab" id="po-t1" aria-controls="po-p1" aria-selected="true">Single</button>
+        <button role="tab" id="po-t2" aria-controls="po-p2" aria-selected="false" tabindex="-1">Bulk</button>
+        <button role="tab" id="po-t3" aria-controls="po-p3" aria-selected="false" tabindex="-1">Scheduled</button>
+      </div>
+
+      <div class="po-wrap">
+        <!-- Single -->
+        <form class="ui po-form" id="po-p1" role="tabpanel" aria-labelledby="po-t1" novalidate>
+          <div class="lp-h"><b>Pay a supplier</b><span class="po-bal">Balance <b>₦2,450,000</b></span></div>
+          <div class="po-ben">
+            <span class="av alt">AT</span>
+            <span><b>ABC Textiles</b><small>Beneficiary · Saved</small></span>
+            <span class="tag ok">Verified name</span>
+          </div>
+          <label class="field"><span class="lbl">Amount</span>
+            <span class="po-amount"><span>₦</span><input class="input mono" id="poAmt" inputmode="numeric" value="450,000" aria-describedby="poAmtErr" /></span>
+            <span class="err-msg" id="poAmtErr"><svg><use href="#i-alert"/></svg><span>Enter an amount up to your balance.</span></span>
+          </label>
+          <label class="field"><span class="lbl">Narration</span><input class="input" value="Fabric — October order" /></label>
+          <button class="btn po-send" type="submit">Review payout</button>
+          <div class="po-review" hidden>
+            <p class="por-k">Confirm this payout</p>
+            <dl><div><dt>To</dt><dd>ABC Textiles</dd></div><div><dt>Amount</dt><dd class="po-r-amt">₦450,000</dd></div><div><dt>From</dt><dd>Ade Fashion · Griv balance</dd></div></dl>
+            <div class="por-btns"><button class="btn" type="button" data-po="confirm">Confirm &amp; send</button><button class="btn btn-line" type="button" data-po="back">Edit</button></div>
+          </div>
+          <div class="po-done" hidden role="status">
+            <span class="okc"><svg><use href="#i-check"/></svg></span>
+            <b>Payout sent</b><small>This is a demo — no money has moved.</small>
+            <button class="btn btn-line" type="button" data-po="reset">Start again</button>
+          </div>
+        </form>
+
+        <!-- Bulk -->
+        <div class="ui po-bulk" id="po-p2" role="tabpanel" aria-labelledby="po-t2" hidden>
+          <div class="lp-h"><b>Staff payroll · October</b><span class="tag mute">8 people</span></div>
+          <ul class="pb-list">
+            <li><span class="av sm">FO</span><span>Funke O. <small>Lekki store</small></span><b>₦180,000</b><em class="tag ok">Paid</em></li>
+            <li><span class="av sm">EB</span><span>Emeka B. <small>Lekki store</small></span><b>₦160,000</b><em class="tag ok">Paid</em></li>
+            <li><span class="av sm">AM</span><span>Amaka M. <small>Tailoring</small></span><b>₦200,000</b><em class="tag ok">Paid</em></li>
+            <li><span class="av sm">YS</span><span>Yusuf S. <small>Delivery</small></span><b>₦120,000</b><em class="tag warn">Processing</em></li>
+            <li class="more">+ 4 more</li>
+          </ul>
+          <div class="pb-tot"><span>Total</span><b>₦1,250,000</b></div>
+          <p class="illus-note">Upload a spreadsheet or pick beneficiaries, review the totals, then send once.</p>
+        </div>
+
+        <!-- Scheduled -->
+        <div class="ui po-sched" id="po-p3" role="tabpanel" aria-labelledby="po-t3" hidden>
+          <div class="lp-h"><b>Scheduled payouts</b><span class="tag dark">Upcoming</span></div>
+          <ul class="ps-list">
+            <li><span class="ps-day"><b>Fri</b><small>9:00</small></span><span><b>ABC Textiles</b><small>Weekly · Fabric</small></span><em>₦450,000</em></li>
+            <li><span class="ps-day"><b>28</b><small>Nov</small></span><span><b>Staff payroll</b><small>Monthly · 8 people</small></span><em>₦1,250,000</em></li>
+            <li><span class="ps-day"><b>1</b><small>Dec</small></span><span><b>Rent · Lekki store</b><small>Monthly</small></span><em>₦300,000</em></li>
+          </ul>
+        </div>
+
+        <aside class="po-aside">
+          <p class="kicker po-k1">Single</p>
+          <h2 class="h3 po-h">Pay one supplier in seconds.</h2>
+          <p class="muted po-d">Choose a saved beneficiary or add a new one, enter the amount and confirm. You always review before anything is sent.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="history">
+  <div class="wrap">
+    <div class="row2">
+      <div class="row-copy reveal">
+        <p class="kicker">Payout history</p>
+        <h3 class="h3">Every payout, with its proof.</h3>
+        <p class="muted">See who you paid, how much, when, and whether it succeeded — with a reference you can share with a supplier who asks.</p>
+        <ul class="ticks"><li><b>Successful</b> — delivered to the recipient’s bank</li><li><b>Processing</b> — on its way</li><li><b>Failed</b> — returned to your balance, so you can try again</li></ul>
+      </div>
+      <div class="row-art reveal">
+        <div class="ui pl-track tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Recipient</th><th>Type</th><th class="num">Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>ABC Textiles</td><td>Scheduled</td><td class="num">₦450,000</td><td><span class="tag ok">Successful</span></td></tr>
+              <tr><td>Staff payroll</td><td>Bulk · 8</td><td class="num">₦1,250,000</td><td><span class="tag warn">Processing</span></td></tr>
+              <tr><td>Rent · Lekki store</td><td>Recurring</td><td class="num">₦300,000</td><td><span class="tag ok">Successful</span></td></tr>
+              <tr><td>Kola Logistics</td><td>Single</td><td class="num">₦45,000</td><td><span class="tag err">Failed</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Three ways to pay</p>
+      <h2 class="h2 h2-sm">Whatever the payment, there’s a way to send it</h2>
+    </header>
+    <div class="cases">
+      <article class="case reveal"><span class="mi"><svg><use href="#i-send"/></svg></span><h3>Single payouts</h3><p>Pay a supplier, refund a customer or settle a one-off bill.</p><p class="eg">ABC Textiles · ₦450,000</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-users"/></svg></span><h3>Bulk payouts</h3><p>Pay your whole team or many suppliers in one go, with one review and one confirmation.</p><p class="eg">Staff payroll · 8 people · ₦1,250,000</p></article>
+      <article class="case reveal"><span class="mi"><svg><use href="#i-repeat"/></svg></span><h3>Scheduled payouts</h3><p>Set a payment to go out on a date, or every week or month, so it’s never late.</p><p class="eg">Rent · ₦300,000 monthly · <a href="/products/subscriptions/">see scheduling</a></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Connected</p>
+      <h2 class="h2">Money in, money out, one record</h2>
+      <p class="sub">Payouts come from the same balance your collections land in — and every one is matched in reconciliation.</p>
+    </header>
+    <div class="links-grid reveal">
+      <a href="/products/virtual-accounts/"><span class="mi"><svg><use href="#i-bank"/></svg></span><span><b>Virtual Accounts</b><small>Collections that fund your payouts</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/subscriptions/"><span class="mi"><svg><use href="#i-repeat"/></svg></span><span><b>Scheduled payments</b><small>Recurring payouts on a timetable</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/cards/"><span class="mi"><svg><use href="#i-card"/></svg></span><span><b>Cards</b><small>For spending your team does day to day</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>Every payout matched and recorded</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Questions</p><h2 class="h2 h2-sm">Payouts, answered</h2></header>
+    <div class="faq">
+      <details><summary>How long does a payout take?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>Timing depends on the receiving bank and payment partners. You can follow each payout’s status in your payout history.</p></div></details>
+      <details><summary>What happens if a payout fails?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>A failed payout is shown as failed in your history, so you can check the details and try again.</p></div></details>
+      <details><summary>Can my team send payouts?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>For details on team access, <a href="/contact/?topic=sales">talk to us</a>.</p></div></details>
+      <details><summary>What does it cost?<span class="pm" aria-hidden="true"></span></summary><div class="a"><p>See the <a href="/pricing/">pricing page</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Pay everyone on time, every time." sub="Single, bulk and scheduled payouts from one balance." button="Start for Free" href="{{signup}}"-->

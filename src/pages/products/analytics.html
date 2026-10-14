@@ -1,0 +1,116 @@
+<!--page {"title": "Analytics & Reporting — Griv", "description": "See how your business is performing: sales over time, where sales come from, best-selling products and who your customers are — built from the payments and orders already in Griv.", "nav": "light", "scripts": ["/js/demos.js"]} -->
+
+<section class="ph">
+  <div class="wrap ph-in">
+    <p class="crumb"><a href="/products/">Products</a><svg class="ic"><use href="#i-chev"/></svg><span class="ci"><svg><use href="#i-chart"/></svg></span>Analytics &amp; Reporting</p>
+    <h1 class="h1">See how your business is really doing.</h1>
+    <p class="lede">Sales, channels, products and customers — built from the payments and orders already in Griv, so the numbers are there without a spreadsheet.</p>
+    <div class="btn-row">
+      <a href="{{signup}}" class="btn btn-lg">Start for Free <svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="an-dash stage reveal" data-demo="analytics">
+      <div class="an-filters" role="group" aria-label="Date range">
+        <span class="an-biz"><span class="av sm">AF</span>Ade Fashion</span>
+        <div class="switch an-range">
+          <button type="button" aria-pressed="false" data-r="7">7 days</button>
+          <button type="button" aria-pressed="true" data-r="30">30 days</button>
+          <button type="button" aria-pressed="false" data-r="90">90 days</button>
+        </div>
+      </div>
+
+      <div class="an-kpis">
+        <div class="ui an-k"><small>Sales</small><b class="ak-sales">₦4,820,000</b><span class="ak-d up">+18% vs previous period</span></div>
+        <div class="ui an-k"><small>Orders</small><b class="ak-orders">96</b><span class="ak-d">Online and in-store</span></div>
+        <div class="ui an-k"><small>Average order</small><b class="ak-aov">₦50,200</b><span class="ak-d">Sales ÷ orders</span></div>
+        <div class="ui an-k"><small>Returning customers</small><b class="ak-ret">61%</b><span class="ak-d">of customers this period</span></div>
+      </div>
+
+      <figure class="ui an-chart">
+        <figcaption class="ac-h">
+          <b>Sales over time</b>
+          <span class="ac-leg"><span><i class="cur"></i>This period</span><span><i class="prev"></i>Previous period</span></span>
+        </figcaption>
+        <div class="ac-plot">
+          <svg class="ac-svg" viewBox="0 0 800 260" preserveAspectRatio="none" aria-hidden="true">
+            <g class="ac-grid"></g>
+            <path class="ac-area"/>
+            <path class="ac-prev"/>
+            <path class="ac-cur"/>
+            <line class="ac-x" y1="0" y2="240"/>
+            <circle class="ac-dot" r="5"/>
+          </svg>
+          <div class="ac-yl" aria-hidden="true"></div>
+          <div class="ac-tip" role="status" hidden></div>
+          <div class="ac-hit" tabindex="0" aria-label="Sales chart. Use left and right arrow keys to read daily values."></div>
+        </div>
+        <div class="ac-xl" aria-hidden="true"></div>
+        <details class="ac-table"><summary>Show as table</summary><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Day</th><th class="num">This period</th><th class="num">Previous period</th></tr></thead><tbody></tbody></table></div></details>
+      </figure>
+
+      <div class="an-row">
+        <div class="ui an-card">
+          <div class="lp-h"><b>Where sales come from</b></div>
+          <ul class="an-bars" data-k="channels"></ul>
+        </div>
+        <div class="ui an-card">
+          <div class="lp-h"><b>Best-selling products</b></div>
+          <ul class="an-bars" data-k="products"></ul>
+        </div>
+      </div>
+      <p class="illus-note">Illustrative figures for a fictional business.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Four questions</p><h2 class="h2 h2-sm">The things every owner wants to know</h2></header>
+    <div class="an-q">
+      <article class="reveal"><b class="an-qn">61%</b><h3>Who your customers are</h3><p>How many come back, and what they buy.</p></article>
+      <article class="reveal"><b class="an-qn">Black Dress</b><h3>Which products sell</h3><p>Your best sellers, and the ones sitting on the shelf.</p></article>
+      <article class="reveal"><b class="an-qn">38%</b><h3>Where sales come from</h3><p>Your online store, your shop, payment links or invoices.</p></article>
+      <article class="reveal"><b class="an-qn">+18%</b><h3>How you’re performing</h3><p>Sales compared with the previous period.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="row2">
+      <div class="row-copy reveal">
+        <p class="kicker">Reporting</p>
+        <h3 class="h3">Numbers you can trust, because they’re already matched.</h3>
+        <p class="muted">Your reports come from the same payments, orders and payouts that Griv reconciles — not a copy someone typed into a spreadsheet. When a number looks odd, you can open the transactions behind it.</p>
+        <a class="vs-go" href="/products/reconciliation/">How reconciliation works <svg class="ic"><use href="#i-chev"/></svg></a>
+      </div>
+      <div class="row-art reveal">
+        <div class="ui an-stmt">
+          <div class="lp-h"><b>October summary</b><span class="muted" style="font-size:13px">Ade Fashion</span></div>
+          <div class="as-r"><span>Money in</span><b class="pos">₦4,310,000</b></div>
+          <div class="as-r"><span>Payouts</span><b>−₦1,950,000</b></div>
+          <div class="as-r"><span>Card spend</span><b>−₦266,700</b></div>
+          <div class="as-r t"><span>Net</span><b>₦2,093,300</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap connect">
+    <header class="sec-head reveal"><p class="eyebrow">Next step</p><h2 class="h2">Ask, don’t dig</h2><p class="sub">Griv AI answers questions about these numbers in plain language — and suggests what to do next.</p></header>
+    <div class="links-grid reveal">
+      <a href="/products/ai/"><span class="mi"><svg><use href="#i-spark"/></svg></span><span><b>Griv AI</b><small>Ask about your business</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/inventory/"><span class="mi"><svg><use href="#i-box"/></svg></span><span><b>Inventory</b><small>Stock behind your best sellers</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/reconciliation/"><span class="mi"><svg><use href="#i-match"/></svg></span><span><b>Reconciliation</b><small>The matched records behind reports</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/products/online-store/"><span class="mi"><svg><use href="#i-store"/></svg></span><span><b>Online Store</b><small>Your online sales channel</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!--@include cta title="Understand your business at a glance." sub="Reports built from the work you’re already doing in Griv." button="Start for Free" href="{{signup}}"-->
