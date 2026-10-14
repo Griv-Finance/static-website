@@ -1,0 +1,85 @@
+<!--page {"title": "Contact — Griv", "description": "Get in touch with Griv about getting started, sales, support, partnerships, press or careers.", "nav": "light", "scripts": ["/js/forms.js"]} -->
+
+<section class="ph ct-ph">
+  <div class="wrap ct-grid">
+    <div class="ct-intro">
+      <p class="eyebrow">Contact</p>
+      <h1 class="h1">Let’s talk about your business.</h1>
+      <p class="lede">Tell us what you need and the right person on the team will get back to you.</p>
+      <ul class="ct-topics">
+        <li><span class="mi"><svg><use href="#i-spark"/></svg></span><span><b>Getting started</b><small>Opening a Griv account for your business</small></span></li>
+        <li><span class="mi"><svg><use href="#i-layers"/></svg></span><span><b>Sales</b><small>Pricing, larger businesses and custom needs</small></span></li>
+        <li><span class="mi"><svg><use href="#i-help"/></svg></span><span><b>Support</b><small>Help with an existing account — or try the <a href="/help/" class="ul">Help Centre</a></small></span></li>
+        <li><span class="mi"><svg><use href="#i-users"/></svg></span><span><b>Partnerships &amp; press</b><small>Working together, or writing about Griv</small></span></li>
+      </ul>
+    </div>
+
+    <div class="ui ct-card">
+      <form class="ct-form" id="contactForm" novalidate data-endpoint="{{contact.endpoint}}">
+        <div class="field">
+          <label for="ct-topic">What can we help with?</label>
+          <select class="select" id="ct-topic" name="topic" required aria-describedby="ct-topic-e">
+            <option value="">Choose a topic</option>
+            <option value="start">Getting started</option>
+            <option value="sales">Sales</option>
+            <option value="support">Support</option>
+            <option value="partnerships">Partnerships</option>
+            <option value="press">Press</option>
+            <option value="careers">Careers</option>
+          </select>
+          <span class="err-msg" id="ct-topic-e"><svg><use href="#i-alert"/></svg><span>Choose a topic.</span></span>
+        </div>
+        <div class="ct-two">
+          <div class="field">
+            <label for="ct-name">Your name</label>
+            <input class="input" id="ct-name" name="name" autocomplete="name" required aria-describedby="ct-name-e" />
+            <span class="err-msg" id="ct-name-e"><svg><use href="#i-alert"/></svg><span>Enter your name.</span></span>
+          </div>
+          <div class="field">
+            <label for="ct-biz">Business name <span class="hint">(optional)</span></label>
+            <input class="input" id="ct-biz" name="business" autocomplete="organization" />
+          </div>
+        </div>
+        <div class="ct-two">
+          <div class="field">
+            <label for="ct-email">Email</label>
+            <input class="input" id="ct-email" name="email" type="email" autocomplete="email" required aria-describedby="ct-email-e" />
+            <span class="err-msg" id="ct-email-e"><svg><use href="#i-alert"/></svg><span>Enter a valid email address.</span></span>
+          </div>
+          <div class="field">
+            <label for="ct-phone">Phone <span class="hint">(optional)</span></label>
+            <input class="input" id="ct-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="ct-phone-e" />
+            <span class="err-msg" id="ct-phone-e"><svg><use href="#i-alert"/></svg><span>Enter a valid phone number, e.g. 0803 123 4567.</span></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="ct-msg">Message</label>
+          <textarea class="textarea" id="ct-msg" name="message" required minlength="20" maxlength="2000" aria-describedby="ct-msg-e ct-msg-c"></textarea>
+          <span class="ct-count hint" id="ct-msg-c">0 / 2000</span>
+          <span class="err-msg" id="ct-msg-e"><svg><use href="#i-alert"/></svg><span>Tell us a little more — at least 20 characters.</span></span>
+        </div>
+        <label class="ct-consent"><input type="checkbox" name="consent" required aria-describedby="ct-consent-e" /> <span>I agree to Griv using these details to respond, as described in the <a href="/privacy/" class="ul">Privacy Policy</a>.</span></label>
+        <span class="err-msg ct-ce" id="ct-consent-e"><svg><use href="#i-alert"/></svg><span>Please agree so we can respond.</span></span>
+        <button class="btn btn-lg ct-submit" type="submit"><span>Send message</span></button>
+        <p class="ct-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="ct-result" hidden tabindex="-1">
+        <span class="ct-r-ic"></span>
+        <h2 class="h3 ct-r-h"></h2>
+        <p class="muted ct-r-p"></p>
+        <button type="button" class="btn btn-line ct-again">Back to the form</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="ct-more">
+      <a href="/help/"><span class="mi"><svg><use href="#i-help"/></svg></span><span><b>Help Centre</b><small>Answers to common questions</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/developers/"><span class="mi"><svg><use href="#i-code"/></svg></span><span><b>Developers</b><small>Building with Griv</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="/security/"><span class="mi"><svg><use href="#i-shield"/></svg></span><span><b>Security</b><small>Report a concern</small></span><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+</section>
