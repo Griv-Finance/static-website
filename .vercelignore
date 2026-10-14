@@ -1,0 +1,4 @@
+# Build sources and tooling — the generated HTML is what gets served
+src/
+tools/
+README.md

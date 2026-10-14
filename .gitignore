@@ -1,0 +1,6 @@
+# OS
+.DS_Store
+
+# Local archives of earlier site versions (not deployed)
+old/
+v1-story/
